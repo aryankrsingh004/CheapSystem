@@ -75,10 +75,5 @@
     "vite": "^7.3.0",
     "wouter": "^3.3.5",
     "zod": "^3.25.76"
-  },
-  "pnpm.onlyBuiltDependencies": [
-    "@firebase/util",
-    "esbuild",
-    "protobufjs"
-  ]
+  }
 }
