@@ -75,5 +75,10 @@
     "vite": "^7.3.0",
     "wouter": "^3.3.5",
     "zod": "^3.25.76"
+  },
+  "pnpm": {
+    "overrides": {
+      "electron-to-chromium": "1.5.391"
+    }
   }
 }
