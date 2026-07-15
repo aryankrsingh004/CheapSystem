@@ -135,9 +135,11 @@ export function useSimulationLoop({ nodes, edges, appMode }: UseSimulationLoopOp
 
         return {
           ...e,
-          markerEnd: { type: MarkerType.Arrow, width: 16, height: 12, color: isSimMode ? '#334155' : '#ffffff' },
-          markerStart: (!isSimMode || isBidirectional)
-            ? { type: MarkerType.Arrow, width: 16, height: 12, color: isSimMode ? (isBidirectional ? '#e879f9' : '#334155') : '#ffffff' }
+          markerEnd: (isSimMode && isBidirectional)
+            ? undefined
+            : { type: MarkerType.Arrow, width: 16, height: 12, color: isSimMode ? '#334155' : '#ffffff' },
+          markerStart: (!isSimMode && isBidirectional)
+            ? { type: MarkerType.Arrow, width: 16, height: 12, color: '#ffffff' }
             : undefined,
           data: { ...(e.data as Record<string, unknown> ?? {}), pct, qps, isBidirectional, simMode: isSimMode },
         };

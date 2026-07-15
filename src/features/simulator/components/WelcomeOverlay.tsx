@@ -1,4 +1,5 @@
-import { FolderOpen, Layout } from 'lucide-react';
+import { FolderOpen, Layout, BookOpen, Rss } from 'lucide-react';
+import { Link } from 'wouter';
 import { PRESETS } from '@/lib/presets';
 
 interface WelcomeOverlayProps {
@@ -20,11 +21,11 @@ export function WelcomeOverlay({ onOpen, onLoadPreset }: WelcomeOverlayProps) {
           {/* Arrowhead pointing up-left */}
           <path d="M 20,25 L 30,15 L 38,25" />
         </svg>
-        <span 
-          className="absolute top-[52px] left-[74px] text-[15px] md:text-lg text-sky-400 font-bold uppercase tracking-wider -rotate-6 whitespace-nowrap" 
+        <span
+          className="absolute top-[52px] left-[74px] text-[15px] md:text-lg text-sky-400 font-bold uppercase tracking-wider -rotate-6 whitespace-nowrap"
           style={{ fontFamily: "'Architects Daughter', cursive" }}
         >
-          start here!
+          Start here!
         </span>
       </div>
       {/* ── Background Creative Elements ────────────────────────────────── */}
@@ -37,31 +38,42 @@ export function WelcomeOverlay({ onOpen, onLoadPreset }: WelcomeOverlayProps) {
       {/* ── Main Content ────────────────────────────────────────────────── */}
       <div className="relative z-20 flex flex-col items-center pointer-events-auto">
         <div className="text-center">
-
-
-          <h1 className="text-7xl font-black text-white mb-4 tracking-tighter leading-none">
+          <div className="text-sm md:text-base font-bold text-sky-400 uppercase tracking-[0.4em] mb-3 select-none">
+            CheapSystem
+          </div>
+          <h1 className="text-7xl font-black text-white mb-4 tracking-tighter leading-none select-none">
             SYSTEM<br />
             <span className="text-transparent bg-clip-text bg-gradient-to-b from-sky-300 to-sky-600">DESIGNER</span>
           </h1>
 
-          <div className="flex items-center justify-center gap-4 text-white/20 text-[10px] font-bold uppercase tracking-[0.4em] mb-10">
+          <div className="flex items-center justify-center gap-5 text-xs font-extrabold text-white/20 tracking-[0.2em] mb-8 uppercase select-none">
             <span>Draft</span>
-            <div className="w-1 h-1 rounded-full bg-white/10" />
+            <span className="w-1.5 h-1.5 rounded-full bg-white/5"></span>
             <span>Simulate</span>
-            <div className="w-1 h-1 rounded-full bg-white/10" />
+            <span className="w-1.5 h-1.5 rounded-full bg-white/5"></span>
             <span>Optimize</span>
           </div>
 
           {/* ── Action Buttons ────────────────────────────────────────────── */}
           <div className="flex flex-col items-center gap-6">
-            <div className="flex items-center gap-4 justify-center">
+            <div className="flex flex-wrap items-center gap-4 justify-center">
               <button
                 onClick={onOpen}
-                className="flex items-center gap-2.5 px-6 py-4 rounded-2xl bg-white/5 border border-white/10 text-white/80 hover:text-white hover:bg-white/10 hover:border-white/20 transition-all active:scale-95 group"
+                className="flex items-center gap-2.5 px-5 py-3.5 rounded-2xl bg-white/5 border border-white/10 text-white/80 hover:text-white hover:bg-white/10 hover:border-white/20 transition-all active:scale-95 group cursor-pointer"
               >
-                <FolderOpen size={20} className="text-sky-400 group-hover:scale-110 transition-transform" />
-                <span className="text-sm font-bold tracking-wide">Open Design</span>
+                <FolderOpen size={18} className="text-sky-400 group-hover:scale-110 transition-transform" />
+                <span className="text-xs font-bold tracking-wide">Open Design</span>
               </button>
+
+              <Link href="/docs" className="flex items-center gap-2.5 px-5 py-3.5 rounded-2xl bg-white/5 border border-white/10 text-white/80 hover:text-white hover:bg-white/10 hover:border-white/20 transition-all active:scale-95 group cursor-pointer">
+                <BookOpen size={18} className="text-sky-400 group-hover:scale-110 transition-transform" />
+                <span className="text-xs font-bold tracking-wide">Read Docs</span>
+              </Link>
+
+              <Link href="/blog" className="flex items-center gap-2.5 px-5 py-3.5 rounded-2xl bg-white/5 border border-white/10 text-white/80 hover:text-white hover:bg-white/10 hover:border-white/20 transition-all active:scale-95 group cursor-pointer">
+                <Rss size={18} className="text-sky-400 group-hover:scale-110 transition-transform" />
+                <span className="text-xs font-bold tracking-wide">Read Blog</span>
+              </Link>
             </div>
 
             {/* Simple Preset Buttons */}

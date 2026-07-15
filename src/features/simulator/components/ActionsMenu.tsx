@@ -6,6 +6,7 @@
  */
 
 import { useRef, useState } from 'react';
+import { Link } from 'wouter';
 import { PRESETS } from '@/lib/presets';
 import { User } from 'firebase/auth';
 
@@ -230,6 +231,28 @@ export function ActionsMenu({
               </div>
             </>
           )}
+
+          <div className="h-px bg-white/5 mx-2 my-1" />
+
+          <Link href="/docs">
+            <button
+              id="actions-docs-btn"
+              className="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg text-left text-[11px] font-medium text-white/60 hover:text-white hover:bg-white/5 transition-all cursor-pointer"
+            >
+              <div className="w-5 h-5 rounded flex items-center justify-center bg-white/5">📖</div>
+              <span>Read Documentation</span>
+            </button>
+          </Link>
+
+          <Link href="/blog">
+            <button
+              id="actions-blog-btn"
+              className="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg text-left text-[11px] font-medium text-white/60 hover:text-white hover:bg-white/5 transition-all cursor-pointer"
+            >
+              <div className="w-5 h-5 rounded flex items-center justify-center bg-white/5">📰</div>
+              <span>Read Engineering Blog</span>
+            </button>
+          </Link>
 
           <div className="h-px bg-white/5 mx-2 my-1" />
 
