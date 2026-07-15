@@ -71,6 +71,17 @@ export function TextNode({ id, data, selected, positionAbsoluteX, positionAbsolu
   const [autoH, setAutoH] = useState(MIN_H);
   const [rotation, setRotation] = useState(d.rotation ?? 0);
 
+  const wRef = useRef(w);
+  const autoHRef = useRef(autoH);
+
+  useEffect(() => {
+    wRef.current = w;
+  }, [w]);
+
+  useEffect(() => {
+    autoHRef.current = autoH;
+  }, [autoH]);
+
   const fontSize = d.fontSize ?? DEFAULT_FS;
   const fontFamily = d.fontFamily ?? 'sans';
   const align = d.align ?? 'left';
@@ -92,7 +103,7 @@ export function TextNode({ id, data, selected, positionAbsoluteX, positionAbsolu
     if (autoWidthMirrorRef.current) {
       const measuredW = Math.max(MIN_W, autoWidthMirrorRef.current.scrollWidth + 2); // small buffer
       // Only update if difference is significant to avoid sub-pixel jitter
-      if (Math.abs(measuredW - w) > 0.5) {
+      if (Math.abs(measuredW - wRef.current) > 0.5) {
         setW(measuredW);
         setNodes(nds => nds.map(n =>
           n.id === id ? { ...n, data: { ...n.data, w: measuredW } } : n
@@ -101,22 +112,22 @@ export function TextNode({ id, data, selected, positionAbsoluteX, positionAbsolu
     }
     if (fixedMirrorRef.current) {
       const measuredH = Math.max(MIN_H, fixedMirrorRef.current.offsetHeight);
-      if (Math.abs(measuredH - autoH) > 0.5) {
+      if (Math.abs(measuredH - autoHRef.current) > 0.5) {
         setAutoH(measuredH);
       }
     }
-  }, [isWidthFixed, id, setNodes, w, autoH]); // w and autoH are needed for the comparison
+  }, [isWidthFixed, id, setNodes]); // w and autoH are removed from dependencies to avoid measurement loops
 
   // ── Mode 2: fixed-width, auto-height measurement ─────────────────────────────
   const measureAutoHeight = useCallback(() => {
     if (!isWidthFixed) return;
     if (fixedMirrorRef.current) {
       const measuredH = Math.max(MIN_H, fixedMirrorRef.current.offsetHeight);
-      if (Math.abs(measuredH - autoH) > 0.5) {
+      if (Math.abs(measuredH - autoHRef.current) > 0.5) {
         setAutoH(measuredH);
       }
     }
-  }, [isWidthFixed, autoH]);
+  }, [isWidthFixed]); // autoH is removed from dependencies to avoid loops
 
   useEffect(() => {
     if (isWidthFixed) {
@@ -124,8 +135,6 @@ export function TextNode({ id, data, selected, positionAbsoluteX, positionAbsolu
     } else {
       measureAutoWidth();
     }
-    // We EXCLUDE 'w' and 'autoH' from dependencies to prevent measurement loops
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [d.text, fontSize, fontFamily, bold, italic, isWidthFixed, measureAutoWidth, measureAutoHeight]);
 
   // Focus on mount / entering edit mode
