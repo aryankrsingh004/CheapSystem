@@ -1,0 +1,1293 @@
+{
+    "nodes": [
+        {
+            "id": "node-1083",
+            "type": "simNode",
+            "position": {
+                "x": -463.71891460057407,
+                "y": -57.847019911431616
+            },
+            "data": {
+                "componentType": "client",
+                "config": {
+                    "label": "Client",
+                    "qpsLimit": 100000,
+                    "replicas": 1
+                },
+                "incomingQps": 100000,
+                "simMode": false
+            },
+            "measured": {
+                "width": 140,
+                "height": 70
+            },
+            "selected": false
+        },
+        {
+            "id": "node-1084",
+            "type": "simNode",
+            "position": {
+                "x": -174.79984067367388,
+                "y": -126.30304318387991
+            },
+            "data": {
+                "componentType": "apiGateway",
+                "config": {
+                    "label": "API Gateway",
+                    "qpsLimit": 50000,
+                    "replicas": 5
+                },
+                "incomingQps": 20000,
+                "simMode": false
+            },
+            "measured": {
+                "width": 90,
+                "height": 200
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "node-1086",
+            "type": "simNode",
+            "position": {
+                "x": 30.96271114610812,
+                "y": -80.66116805294644
+            },
+            "data": {
+                "componentType": "appServer",
+                "config": {
+                    "label": "Video Service",
+                    "qpsLimit": 50000,
+                    "replicas": 5
+                },
+                "incomingQps": 20000,
+                "simMode": false
+            },
+            "measured": {
+                "width": 180,
+                "height": 90
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "node-1087",
+            "type": "simNode",
+            "position": {
+                "x": 390.6490245945584,
+                "y": -206.00036249260899
+            },
+            "data": {
+                "componentType": "objectStorage",
+                "config": {
+                    "label": "S3",
+                    "qpsLimit": 250000,
+                    "replicas": 5
+                },
+                "incomingQps": 73332.6,
+                "simMode": false
+            },
+            "measured": {
+                "width": 100,
+                "height": 90
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "node-1088",
+            "type": "simNode",
+            "position": {
+                "x": 372.1544334363648,
+                "y": 21.097766665200297
+            },
+            "data": {
+                "componentType": "database",
+                "config": {
+                    "label": "VideoMeta data DB",
+                    "qpsLimit": 8000,
+                    "replicas": 15
+                },
+                "incomingQps": 10599.770000000002,
+                "simMode": false
+            },
+            "measured": {
+                "width": 120,
+                "height": 120
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "node-1089",
+            "type": "simNode",
+            "position": {
+                "x": 942.4689369564077,
+                "y": -312.10820357511784
+            },
+            "data": {
+                "componentType": "appServer",
+                "config": {
+                    "label": "Chunker",
+                    "qpsLimit": 10000,
+                    "replicas": 10
+                },
+                "incomingQps": 14666.2,
+                "simMode": false
+            },
+            "measured": {
+                "width": 180,
+                "height": 90
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "node-1090",
+            "type": "simNode",
+            "position": {
+                "x": 1257.0040670467,
+                "y": -326.8891446397368
+            },
+            "data": {
+                "componentType": "appServer",
+                "config": {
+                    "label": "Transcoder (144p, 240, ... 4k)",
+                    "qpsLimit": 10000,
+                    "replicas": 10
+                },
+                "incomingQps": 14666.2,
+                "simMode": false
+            },
+            "measured": {
+                "width": 180,
+                "height": 92
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "node-1091",
+            "type": "textNode",
+            "position": {
+                "x": 1021.0227462710546,
+                "y": -221.02307538089653
+            },
+            "selected": false,
+            "data": {
+                "text": "2-10s clips",
+                "fontSize": 14,
+                "w": 86,
+                "h": null,
+                "rotation": 0,
+                "color": "#e9ecef",
+                "opacity": 100,
+                "align": "left",
+                "fontFamily": "sans",
+                "isWidthFixed": false,
+                "incomingQps": 0,
+                "simMode": false
+            },
+            "style": {
+                "overflow": "visible",
+                "background": "transparent",
+                "border": "none"
+            },
+            "measured": {
+                "width": 86,
+                "height": 29
+            },
+            "dragging": false
+        },
+        {
+            "id": "node-1092",
+            "type": "textNode",
+            "position": {
+                "x": -175.47747902326955,
+                "y": 77.70288337193192
+            },
+            "selected": false,
+            "data": {
+                "text": "- routing\n- middleware",
+                "fontSize": 14,
+                "w": 106,
+                "h": null,
+                "rotation": 0,
+                "color": "#e9ecef",
+                "opacity": 100,
+                "align": "left",
+                "fontFamily": "mono",
+                "isWidthFixed": false,
+                "incomingQps": 0,
+                "simMode": false
+            },
+            "style": {
+                "overflow": "visible",
+                "background": "transparent",
+                "border": "none"
+            },
+            "measured": {
+                "width": 106,
+                "height": 50
+            },
+            "dragging": false
+        },
+        {
+            "id": "node-1093",
+            "type": "simNode",
+            "position": {
+                "x": -449.1602261721952,
+                "y": -342.8505125483911
+            },
+            "data": {
+                "componentType": "cdn",
+                "config": {
+                    "label": "CDN",
+                    "qpsLimit": 1000000,
+                    "replicas": 1,
+                    "reduction": 80
+                },
+                "incomingQps": 80000,
+                "simMode": false
+            },
+            "measured": {
+                "width": 120,
+                "height": 120
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "node-1094",
+            "type": "textNode",
+            "position": {
+                "x": -379.31019829904074,
+                "y": -368.22862318818017
+            },
+            "selected": false,
+            "data": {
+                "text": "- have popular video chunks",
+                "fontSize": 14,
+                "w": 222,
+                "h": null,
+                "rotation": 0,
+                "color": "#e9ecef",
+                "opacity": 100,
+                "align": "left",
+                "fontFamily": "mono",
+                "isWidthFixed": false,
+                "incomingQps": 0,
+                "simMode": false
+            },
+            "style": {
+                "overflow": "visible",
+                "background": "transparent",
+                "border": "none"
+            },
+            "measured": {
+                "width": 222,
+                "height": 29
+            },
+            "dragging": false
+        },
+        {
+            "id": "node-1095",
+            "type": "textNode",
+            "position": {
+                "x": -474.913064415309,
+                "y": 174.4636748882036
+            },
+            "selected": false,
+            "data": {
+                "text": "Streaming Protocols:\n1. HLS\n2. DASH",
+                "fontSize": 14,
+                "w": 168,
+                "h": null,
+                "rotation": 0,
+                "color": "#e9ecef",
+                "opacity": 100,
+                "align": "left",
+                "fontFamily": "mono",
+                "isWidthFixed": false,
+                "incomingQps": 0,
+                "simMode": false
+            },
+            "style": {
+                "overflow": "visible",
+                "background": "transparent",
+                "border": "none"
+            },
+            "measured": {
+                "width": 168,
+                "height": 71
+            },
+            "dragging": false
+        },
+        {
+            "id": "node-1096",
+            "type": "textNode",
+            "position": {
+                "x": -454.90481464583553,
+                "y": 18.21577432174459
+            },
+            "selected": false,
+            "data": {
+                "text": "- chunks\n- PUT /presignedurls",
+                "fontSize": 14,
+                "w": 168,
+                "h": null,
+                "rotation": 0,
+                "color": "#e9ecef",
+                "opacity": 100,
+                "align": "left",
+                "fontFamily": "mono",
+                "isWidthFixed": false,
+                "incomingQps": 0,
+                "simMode": false
+            },
+            "style": {
+                "overflow": "visible",
+                "background": "transparent",
+                "border": "none"
+            },
+            "measured": {
+                "width": 168,
+                "height": 50
+            },
+            "dragging": false
+        },
+        {
+            "id": "node-1097",
+            "type": "textNode",
+            "position": {
+                "x": 349.14723597564,
+                "y": 158.34348606543918
+            },
+            "selected": false,
+            "data": {
+                "text": "Video\n- id\n- name\n- description\n- status: pending | uploaded | chunking | chunks_complete\n- FullS3Url",
+                "fontSize": 14,
+                "w": 453,
+                "h": null,
+                "rotation": 0,
+                "color": "#e9ecef",
+                "opacity": 100,
+                "align": "left",
+                "fontFamily": "mono",
+                "isWidthFixed": false,
+                "incomingQps": 0,
+                "simMode": false
+            },
+            "style": {
+                "overflow": "visible",
+                "background": "transparent",
+                "border": "none"
+            },
+            "measured": {
+                "width": 453,
+                "height": 134
+            },
+            "dragging": false
+        },
+        {
+            "id": "node-1098",
+            "type": "textNode",
+            "position": {
+                "x": 502.50423846964776,
+                "y": 115.61257924283511
+            },
+            "selected": false,
+            "data": {
+                "text": "1m * 1kb * 365 = .35TB\nshard by videoId sk on time",
+                "fontSize": 14,
+                "w": 222,
+                "h": null,
+                "rotation": 0,
+                "color": "#e9ecef",
+                "opacity": 100,
+                "align": "left",
+                "fontFamily": "mono",
+                "isWidthFixed": false,
+                "incomingQps": 0,
+                "simMode": false
+            },
+            "style": {
+                "overflow": "visible",
+                "background": "transparent",
+                "border": "none"
+            },
+            "measured": {
+                "width": 222,
+                "height": 50
+            },
+            "dragging": false
+        },
+        {
+            "id": "node-1099",
+            "type": "textNode",
+            "position": {
+                "x": -580.9705512455455,
+                "y": -340.24777112765565
+            },
+            "selected": false,
+            "data": {
+                "text": "{\n    240p: [],\n    720p: [],\n}",
+                "fontSize": 14,
+                "w": 114,
+                "h": null,
+                "rotation": 0,
+                "color": "#e9ecef",
+                "opacity": 100,
+                "align": "left",
+                "fontFamily": "mono",
+                "isWidthFixed": false,
+                "incomingQps": 0,
+                "simMode": false
+            },
+            "style": {
+                "overflow": "visible",
+                "background": "transparent",
+                "border": "none"
+            },
+            "measured": {
+                "width": 114,
+                "height": 92
+            },
+            "dragging": false
+        },
+        {
+            "id": "node-1100",
+            "type": "textNode",
+            "position": {
+                "x": -1184.198725958248,
+                "y": -632.8242160686805
+            },
+            "selected": false,
+            "data": {
+                "text": "YouTube",
+                "fontSize": 41,
+                "w": 188,
+                "h": 71,
+                "rotation": 0,
+                "color": "#f93939",
+                "opacity": 100,
+                "align": "left",
+                "fontFamily": "slab",
+                "isWidthFixed": true,
+                "incomingQps": 0,
+                "simMode": false
+            },
+            "style": {
+                "overflow": "visible",
+                "background": "transparent",
+                "border": "none"
+            },
+            "measured": {
+                "width": 188,
+                "height": 71
+            },
+            "dragging": false
+        },
+        {
+            "id": "node-1101",
+            "type": "textNode",
+            "position": {
+                "x": -1181.301424627476,
+                "y": -560.5657862677267
+            },
+            "selected": false,
+            "data": {
+                "text": "YouTube is a video-sharing platform that allows users to upload, view, and interact with video content.",
+                "fontSize": 14,
+                "w": 807,
+                "h": null,
+                "rotation": 0,
+                "color": "#e9ecef",
+                "opacity": 100,
+                "align": "left",
+                "fontFamily": "mono",
+                "isWidthFixed": false,
+                "incomingQps": 0,
+                "simMode": false
+            },
+            "style": {
+                "overflow": "visible",
+                "background": "transparent",
+                "border": "none"
+            },
+            "measured": {
+                "width": 807,
+                "height": 29
+            },
+            "dragging": false
+        },
+        {
+            "id": "node-1103",
+            "type": "textNode",
+            "position": {
+                "x": -1175.4975271901817,
+                "y": -495.90212895668606
+            },
+            "selected": false,
+            "data": {
+                "text": "Funtional Requirements",
+                "fontSize": 20,
+                "w": 256,
+                "h": null,
+                "rotation": 0,
+                "color": "#e9ecef",
+                "opacity": 100,
+                "align": "left",
+                "fontFamily": "mono",
+                "isWidthFixed": false,
+                "incomingQps": 0,
+                "simMode": false
+            },
+            "style": {
+                "overflow": "visible",
+                "background": "transparent",
+                "border": "none"
+            },
+            "measured": {
+                "width": 256,
+                "height": 38
+            },
+            "dragging": false
+        },
+        {
+            "id": "node-1104",
+            "type": "textNode",
+            "position": {
+                "x": -1173.8129719394992,
+                "y": -462.0242128975665
+            },
+            "selected": false,
+            "data": {
+                "text": "1. Users should be able to upload videos\n2. Users should be able to watch/stream videos",
+                "fontSize": 14,
+                "w": 368,
+                "h": null,
+                "rotation": 0,
+                "color": "#e9ecef",
+                "opacity": 100,
+                "align": "left",
+                "fontFamily": "mono",
+                "isWidthFixed": false,
+                "incomingQps": 0,
+                "simMode": false
+            },
+            "style": {
+                "overflow": "visible",
+                "background": "transparent",
+                "border": "none"
+            },
+            "measured": {
+                "width": 368,
+                "height": 50
+            },
+            "dragging": false
+        },
+        {
+            "id": "node-1105",
+            "type": "textNode",
+            "position": {
+                "x": -991.7796688851045,
+                "y": -321.20425404585535
+            },
+            "selected": false,
+            "data": {
+                "text": "Scale",
+                "fontSize": 20,
+                "w": 69,
+                "h": null,
+                "rotation": 0,
+                "color": "#e9ecef",
+                "opacity": 100,
+                "align": "left",
+                "fontFamily": "mono",
+                "isWidthFixed": false,
+                "incomingQps": 0,
+                "simMode": false
+            },
+            "style": {
+                "overflow": "visible",
+                "background": "transparent",
+                "border": "none"
+            },
+            "measured": {
+                "width": 69,
+                "height": 38
+            },
+            "dragging": false
+        },
+        {
+            "id": "node-1106",
+            "type": "textNode",
+            "position": {
+                "x": -1170.5813100881924,
+                "y": -364.6015402919437
+            },
+            "selected": false,
+            "data": {
+                "text": "~1M uploads/day\n100M DAU\nMax Video size of 256GB",
+                "fontSize": 14,
+                "w": 191,
+                "h": null,
+                "rotation": 0,
+                "color": "#e9ecef",
+                "opacity": 100,
+                "align": "left",
+                "fontFamily": "mono",
+                "isWidthFixed": false,
+                "incomingQps": 0,
+                "simMode": false
+            },
+            "style": {
+                "overflow": "visible",
+                "background": "transparent",
+                "border": "none"
+            },
+            "measured": {
+                "width": 191,
+                "height": 71
+            },
+            "dragging": false
+        },
+        {
+            "id": "node-1107",
+            "type": "textNode",
+            "position": {
+                "x": -1171.3453976574733,
+                "y": -271.16616882686344
+            },
+            "selected": false,
+            "data": {
+                "text": "Non-functional Requirements",
+                "fontSize": 20,
+                "w": 311,
+                "h": null,
+                "rotation": 0,
+                "color": "#e9ecef",
+                "opacity": 100,
+                "align": "left",
+                "fontFamily": "mono",
+                "isWidthFixed": false,
+                "incomingQps": 0,
+                "simMode": false
+            },
+            "style": {
+                "overflow": "visible",
+                "background": "transparent",
+                "border": "none"
+            },
+            "measured": {
+                "width": 311,
+                "height": 38
+            },
+            "dragging": false
+        },
+        {
+            "id": "node-1108",
+            "type": "textNode",
+            "position": {
+                "x": -1166.9792591152827,
+                "y": -240.6031324095413
+            },
+            "selected": false,
+            "data": {
+                "text": "- Availability >> consistency for video uploads\n- support uploading/streaming for large videos (256GB)\n- low latency streaming (<500ms) true in low bandwidth\n- scalability to scale 1M uploads/day and 100M views",
+                "fontSize": 14,
+                "w": 430,
+                "h": null,
+                "rotation": 0,
+                "color": "#e9ecef",
+                "opacity": 100,
+                "align": "left",
+                "fontFamily": "mono",
+                "isWidthFixed": false,
+                "incomingQps": 0,
+                "simMode": false
+            },
+            "style": {
+                "overflow": "visible",
+                "background": "transparent",
+                "border": "none"
+            },
+            "measured": {
+                "width": 430,
+                "height": 92
+            },
+            "dragging": false
+        },
+        {
+            "id": "node-1109",
+            "type": "textNode",
+            "position": {
+                "x": -1171.6643382101192,
+                "y": -128.09296027447374
+            },
+            "selected": false,
+            "data": {
+                "text": "Core Entities",
+                "fontSize": 20,
+                "w": 157,
+                "h": null,
+                "rotation": 0,
+                "color": "#e9ecef",
+                "opacity": 100,
+                "align": "left",
+                "fontFamily": "mono",
+                "isWidthFixed": false,
+                "incomingQps": 0,
+                "simMode": false
+            },
+            "style": {
+                "overflow": "visible",
+                "background": "transparent",
+                "border": "none"
+            },
+            "measured": {
+                "width": 157,
+                "height": 38
+            },
+            "dragging": false
+        },
+        {
+            "id": "node-1110",
+            "type": "textNode",
+            "position": {
+                "x": -1162.8411544443488,
+                "y": -94.71828000734615
+            },
+            "selected": false,
+            "data": {
+                "text": "- Video\n- Video Metadata\n- User",
+                "fontSize": 14,
+                "w": 137,
+                "h": null,
+                "rotation": 0,
+                "color": "#e9ecef",
+                "opacity": 100,
+                "align": "left",
+                "fontFamily": "mono",
+                "isWidthFixed": false,
+                "incomingQps": 0,
+                "simMode": false
+            },
+            "style": {
+                "overflow": "visible",
+                "background": "transparent",
+                "border": "none"
+            },
+            "measured": {
+                "width": 137,
+                "height": 71
+            },
+            "dragging": false
+        },
+        {
+            "id": "node-1111",
+            "type": "textNode",
+            "position": {
+                "x": -1165.7182805397406,
+                "y": 2.33675604994923
+            },
+            "selected": false,
+            "data": {
+                "text": "API",
+                "fontSize": 20,
+                "w": 47,
+                "h": null,
+                "rotation": 0,
+                "color": "#e9ecef",
+                "opacity": 100,
+                "align": "left",
+                "fontFamily": "mono",
+                "isWidthFixed": false,
+                "incomingQps": 0,
+                "simMode": false
+            },
+            "style": {
+                "overflow": "visible",
+                "background": "transparent",
+                "border": "none"
+            },
+            "measured": {
+                "width": 47,
+                "height": 38
+            },
+            "dragging": false
+        },
+        {
+            "id": "node-1112",
+            "type": "textNode",
+            "position": {
+                "x": -1156.89508214015,
+                "y": 45.4936474808245
+            },
+            "selected": false,
+            "data": {
+                "text": "// upload a video\nPOST /videos\n{\n    VideoMetadata\n}",
+                "fontSize": 14,
+                "w": 145,
+                "h": null,
+                "rotation": 0,
+                "color": "#e9ecef",
+                "opacity": 100,
+                "align": "left",
+                "fontFamily": "mono",
+                "isWidthFixed": false,
+                "incomingQps": 0,
+                "simMode": false
+            },
+            "style": {
+                "overflow": "visible",
+                "background": "transparent",
+                "border": "none"
+            },
+            "measured": {
+                "width": 145,
+                "height": 113
+            },
+            "dragging": false
+        },
+        {
+            "id": "node-1113",
+            "type": "textNode",
+            "position": {
+                "x": -1159.2224029501726,
+                "y": 182.71975519091717
+            },
+            "selected": false,
+            "data": {
+                "text": "// watch a video\nGET /videos/:videoId -> Video & VideoMetadata",
+                "fontSize": 14,
+                "w": 360,
+                "h": null,
+                "rotation": 0,
+                "color": "#e9ecef",
+                "opacity": 100,
+                "align": "left",
+                "fontFamily": "mono",
+                "isWidthFixed": false,
+                "incomingQps": 0,
+                "simMode": false
+            },
+            "style": {
+                "overflow": "visible",
+                "background": "transparent",
+                "border": "none"
+            },
+            "measured": {
+                "width": 360,
+                "height": 50
+            },
+            "dragging": false
+        },
+        {
+            "id": "node-1115",
+            "type": "simNode",
+            "position": {
+                "x": 657.3851064044555,
+                "y": -327.63023719784223
+            },
+            "data": {
+                "componentType": "asyncQueue",
+                "config": {
+                    "label": "Message Queue",
+                    "qpsLimit": 1000000,
+                    "replicas": 1
+                },
+                "incomingQps": 14666.520000000002,
+                "simMode": false,
+                "maxOutflow": 100000,
+                "bufferLevel": 0,
+                "bufferCapacity": 100000000,
+                "bufferFillPct": 0,
+                "isOverflowing": false
+            },
+            "measured": {
+                "width": 190,
+                "height": 100
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "node-1779218826001",
+            "type": "frameNode",
+            "position": {
+                "x": 927.27759995154,
+                "y": -439.69515183880094
+            },
+            "selected": false,
+            "zIndex": -10,
+            "data": {
+                "label": "Chunker",
+                "w": 539,
+                "h": 354,
+                "color": "#ffffff",
+                "borderStyle": "solid",
+                "opacity": 5,
+                "incomingQps": 0,
+                "simMode": false,
+                "borderWidth": 4
+            },
+            "style": {
+                "width": 539,
+                "height": 354,
+                "overflow": "visible",
+                "background": "transparent",
+                "border": "none"
+            },
+            "measured": {
+                "width": 539,
+                "height": 354
+            },
+            "dragging": false,
+            "width": 539,
+            "height": 354,
+            "resizing": false
+        },
+        {
+            "id": "node-1779218826007",
+            "type": "textNode",
+            "position": {
+                "x": 1221.6643640348325,
+                "y": -441.8693831077082
+            },
+            "selected": false,
+            "data": {
+                "text": "Transcoder",
+                "fontSize": 42,
+                "w": 266.800048828125,
+                "h": null,
+                "rotation": 0,
+                "color": "#e9ecef",
+                "opacity": 100,
+                "align": "left",
+                "fontFamily": "handwritten",
+                "isWidthFixed": true,
+                "incomingQps": 0,
+                "simMode": false
+            },
+            "style": {
+                "overflow": "visible",
+                "background": "transparent",
+                "border": "none"
+            },
+            "measured": {
+                "width": 267,
+                "height": 71
+            },
+            "dragging": false
+        }
+    ],
+    "edges": [
+        {
+            "type": "simEdge",
+            "markerEnd": {
+                "type": "arrow",
+                "width": 16,
+                "height": 12,
+                "color": "#334155"
+            },
+            "source": "node-1084",
+            "sourceHandle": "right",
+            "target": "node-1086",
+            "targetHandle": "left",
+            "data": {
+                "pct": 100
+            },
+            "id": "xy-edge__node-1084right-node-1086left"
+        },
+        {
+            "type": "simEdge",
+            "markerEnd": {
+                "type": "arrow",
+                "width": 16,
+                "height": 12,
+                "color": "#334155"
+            },
+            "source": "node-1083",
+            "sourceHandle": "right",
+            "target": "node-1084",
+            "targetHandle": "left",
+            "data": {
+                "pct": 20
+            },
+            "id": "xy-edge__node-1083right-node-1084left"
+        },
+        {
+            "type": "simEdge",
+            "markerEnd": {
+                "type": "arrow",
+                "width": 16,
+                "height": 12,
+                "color": "#ffffff"
+            },
+            "source": "node-1086",
+            "sourceHandle": "right",
+            "target": "node-1087",
+            "targetHandle": "left",
+            "data": {
+                "pct": 80,
+                "qps": 5000,
+                "isBidirectional": false,
+                "simMode": false,
+                "label": "get pre-signed\nurls"
+            },
+            "id": "xy-edge__node-1086right-node-1087left",
+            "selected": false,
+            "markerStart": {
+                "type": "arrow",
+                "width": 16,
+                "height": 12,
+                "color": "#ffffff"
+            }
+        },
+        {
+            "type": "simEdge",
+            "markerEnd": {
+                "type": "arrow",
+                "width": 16,
+                "height": 12,
+                "color": "#ffffff"
+            },
+            "source": "node-1086",
+            "sourceHandle": "right",
+            "target": "node-1088",
+            "targetHandle": "left",
+            "data": {
+                "pct": 20,
+                "qps": 5000,
+                "isBidirectional": false,
+                "simMode": false,
+                "label": "store metadata"
+            },
+            "id": "xy-edge__node-1086right-node-1088left",
+            "selected": false,
+            "markerStart": {
+                "type": "arrow",
+                "width": 16,
+                "height": 12,
+                "color": "#ffffff"
+            }
+        },
+        {
+            "type": "simEdge",
+            "markerEnd": {
+                "type": "arrow",
+                "width": 16,
+                "height": 12,
+                "color": "#334155"
+            },
+            "source": "node-1087",
+            "sourceHandle": "right",
+            "target": "node-1088",
+            "targetHandle": "left",
+            "data": {
+                "pct": 5,
+                "qps": 33846.153515625,
+                "isBidirectional": false,
+                "simMode": true,
+                "cpDx": 98.71663643215874,
+                "cpDy": -12.337793335350533,
+                "label": "s3 notification"
+            },
+            "id": "xy-edge__node-1087right-node-1088left",
+            "selected": false
+        },
+        {
+            "type": "simEdge",
+            "markerEnd": {
+                "type": "arrow",
+                "width": 16,
+                "height": 12,
+                "color": "#334155"
+            },
+            "source": "node-1089",
+            "sourceHandle": "right",
+            "target": "node-1088",
+            "targetHandle": "left",
+            "data": {
+                "pct": 10,
+                "qps": 3384.6150390625003,
+                "isBidirectional": false,
+                "simMode": true,
+                "cpDx": 161.97788038824797,
+                "cpDy": 148.9393548609921
+            },
+            "id": "xy-edge__node-1089right-node-1088left",
+            "selected": false
+        },
+        {
+            "type": "simEdge",
+            "markerEnd": {
+                "type": "arrow",
+                "width": 16,
+                "height": 12,
+                "color": "#334155"
+            },
+            "source": "node-1090",
+            "sourceHandle": "right",
+            "target": "node-1088",
+            "targetHandle": "left",
+            "data": {
+                "pct": 10,
+                "qps": 1692.3075195312501,
+                "isBidirectional": false,
+                "simMode": true,
+                "cpDx": 86.81961997032226,
+                "cpDy": 257.43574202788153
+            },
+            "id": "xy-edge__node-1090right-node-1088left",
+            "selected": false
+        },
+        {
+            "type": "simEdge",
+            "markerEnd": {
+                "type": "arrow",
+                "width": 16,
+                "height": 12,
+                "color": "#334155"
+            },
+            "source": "node-1083",
+            "sourceHandle": "right",
+            "target": "node-1093",
+            "targetHandle": "left",
+            "data": {
+                "pct": 80
+            },
+            "id": "xy-edge__node-1083right-node-1093left",
+            "selected": false
+        },
+        {
+            "type": "simEdge",
+            "markerEnd": {
+                "type": "arrow",
+                "width": 16,
+                "height": 12,
+                "color": "#ffffff"
+            },
+            "source": "node-1083",
+            "sourceHandle": "right",
+            "target": "node-1087",
+            "targetHandle": "left",
+            "data": {
+                "pct": 50,
+                "qps": 3300,
+                "isBidirectional": false,
+                "simMode": false,
+                "cpDx": -345.969170264265,
+                "cpDy": -211.81796561581345,
+                "label": "1. upload directly to s3\nw/ multipart upload\n2. Download directly from s3"
+            },
+            "id": "xy-edge__node-1083right-node-1087left",
+            "selected": false,
+            "markerStart": {
+                "type": "arrow",
+                "width": 16,
+                "height": 12,
+                "color": "#ffffff"
+            }
+        },
+        {
+            "type": "simEdge",
+            "markerEnd": {
+                "type": "arrow",
+                "width": 16,
+                "height": 12,
+                "color": "#ffffff"
+            },
+            "source": "node-1087",
+            "sourceHandle": "right",
+            "target": "node-1115",
+            "targetHandle": "left",
+            "data": {
+                "pct": 20,
+                "qps": 14666.520000000002,
+                "isBidirectional": false,
+                "simMode": false,
+                "cpDx": -12.27423727702249,
+                "cpDy": 15.034326714512265,
+                "label": "S3 notification\nthrough Lambda"
+            },
+            "id": "xy-edge__node-1087right-node-1115left",
+            "selected": false,
+            "markerStart": {
+                "type": "arrow",
+                "width": 16,
+                "height": 12,
+                "color": "#ffffff"
+            }
+        },
+        {
+            "type": "simEdge",
+            "markerEnd": {
+                "type": "arrow",
+                "width": 16,
+                "height": 12,
+                "color": "#334155"
+            },
+            "source": "node-1115",
+            "sourceHandle": "right",
+            "target": "node-1089",
+            "targetHandle": "left",
+            "data": {
+                "pct": 100
+            },
+            "id": "xy-edge__node-1115right-node-1089left",
+            "selected": false
+        },
+        {
+            "type": "simEdge",
+            "markerEnd": {
+                "type": "arrow",
+                "width": 16,
+                "height": 12,
+                "color": "#334155"
+            },
+            "source": "node-1089",
+            "sourceHandle": "right",
+            "target": "node-1090",
+            "targetHandle": "left",
+            "data": {
+                "pct": 100
+            },
+            "id": "xy-edge__node-1089right-node-1090left",
+            "selected": false
+        },
+        {
+            "type": "simEdge",
+            "markerEnd": {
+                "type": "arrow",
+                "width": 16,
+                "height": 12,
+                "color": "#334155"
+            },
+            "source": "node-1090",
+            "sourceHandle": "right",
+            "target": "node-1087",
+            "targetHandle": "left",
+            "data": {
+                "pct": 50,
+                "qps": 3473.6781250000004,
+                "isBidirectional": false,
+                "simMode": true,
+                "cpDx": -291.3449307943049,
+                "cpDy": -389.1325855232492,
+                "label": "Store back in S3"
+            },
+            "id": "xy-edge__node-1090right-node-1087left",
+            "selected": false
+        }
+    ],
+    "viewport": {
+        "x": 688.3769613893379,
+        "y": 436.5416090383746,
+        "zoom": 0.5230346459696965
+    },
+    "version": "1.0"
+}

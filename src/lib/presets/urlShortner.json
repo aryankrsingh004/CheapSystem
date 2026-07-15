@@ -1,0 +1,918 @@
+{
+  "nodes": [
+    {
+      "id": "node-1002",
+      "type": "simNode",
+      "position": {
+        "x": 750.0574976997754,
+        "y": 638.7809104333893
+      },
+      "data": {
+        "componentType": "client",
+        "config": {
+          "label": "Client",
+          "qpsLimit": 50000,
+          "replicas": 1
+        }
+      },
+      "measured": {
+        "width": 140,
+        "height": 70
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "node-1003",
+      "type": "simNode",
+      "position": {
+        "x": 1020.0574976997754,
+        "y": 560.6559104333893
+      },
+      "data": {
+        "componentType": "apiGateway",
+        "config": {
+          "label": "API Gateway",
+          "qpsLimit": 20000,
+          "replicas": 3
+        }
+      },
+      "measured": {
+        "width": 90,
+        "height": 200
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "node-1004",
+      "type": "simNode",
+      "position": {
+        "x": 1226.3860233709493,
+        "y": 503.3119755082322
+      },
+      "data": {
+        "componentType": "appServer",
+        "config": {
+          "label": "Read Service",
+          "qpsLimit": 10000,
+          "replicas": 5
+        }
+      },
+      "measured": {
+        "width": 180,
+        "height": 90
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "node-1005",
+      "type": "simNode",
+      "position": {
+        "x": 1227.6360233709493,
+        "y": 699.5619755082322
+      },
+      "data": {
+        "componentType": "appServer",
+        "config": {
+          "label": "Write Service",
+          "qpsLimit": 10000,
+          "replicas": 1
+        }
+      },
+      "measured": {
+        "width": 180,
+        "height": 90
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "node-1006",
+      "type": "simNode",
+      "position": {
+        "x": 1499.2375790432275,
+        "y": 292.4917517686149
+      },
+      "data": {
+        "componentType": "cache",
+        "config": {
+          "label": "Cache",
+          "qpsLimit": 50000,
+          "replicas": 1,
+          "cacheHitRatio": 0.8
+        }
+      },
+      "measured": {
+        "width": 120,
+        "height": 120
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "node-1007",
+      "type": "simNode",
+      "position": {
+        "x": 1592.636023370949,
+        "y": 585.8119755082322
+      },
+      "data": {
+        "componentType": "database",
+        "config": {
+          "label": "Database",
+          "qpsLimit": 5000,
+          "replicas": 4
+        }
+      },
+      "measured": {
+        "width": 120,
+        "height": 120
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "node-1008",
+      "type": "simNode",
+      "position": {
+        "x": 1516.3860233709495,
+        "y": 819.5619755082322
+      },
+      "data": {
+        "componentType": "database",
+        "config": {
+          "label": "Global Counter",
+          "qpsLimit": 8000,
+          "replicas": 2
+        }
+      },
+      "measured": {
+        "width": 120,
+        "height": 120
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "node-1009",
+      "type": "textNode",
+      "position": {
+        "x": 722.5574976997754,
+        "y": 721.9059104333893
+      },
+      "data": {
+        "text": "- 302 redirect",
+        "fontSize": 17,
+        "w": 157,
+        "h": 34,
+        "rotation": 0,
+        "color": "#e9ecef",
+        "opacity": 100,
+        "align": "center",
+        "fontFamily": "mono",
+        "incomingQps": 0,
+        "simMode": false
+      },
+      "style": {
+        "overflow": "visible",
+        "background": "transparent",
+        "border": "none"
+      },
+      "measured": {
+        "width": 157,
+        "height": 34
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "node-1028",
+      "type": "textNode",
+      "position": {
+        "x": 218.86543777833532,
+        "y": 234.0472266556659
+      },
+      "selected": false,
+      "data": {
+        "text": "URL Shortender like Bit.ly",
+        "fontSize": 36,
+        "w": 576,
+        "h": null,
+        "rotation": 0,
+        "color": "#4dabf7",
+        "opacity": 100,
+        "align": "left",
+        "fontFamily": "mono",
+        "incomingQps": 0,
+        "simMode": false
+      },
+      "style": {
+        "overflow": "visible",
+        "background": "transparent",
+        "border": "none"
+      },
+      "measured": {
+        "width": 576,
+        "height": 62
+      },
+      "dragging": false
+    },
+    {
+      "id": "node-1035",
+      "type": "textNode",
+      "position": {
+        "x": 270.5329962726267,
+        "y": 326.87446938995646
+      },
+      "selected": false,
+      "data": {
+        "text": "Bit.ly is a URL shortening service that converts long URLs into shorter, manageable links.\ni.e www.mylongurl.com/is/annoying -> www.bit.ly/GHJ23",
+        "fontSize": 14,
+        "w": 770,
+        "h": null,
+        "rotation": 0,
+        "color": "#e9ecef",
+        "opacity": 100,
+        "align": "left",
+        "fontFamily": "mono",
+        "isWidthFixed": false,
+        "incomingQps": 0,
+        "simMode": false
+      },
+      "style": {
+        "overflow": "visible",
+        "background": "transparent",
+        "border": "none"
+      },
+      "measured": {
+        "width": 770,
+        "height": 50
+      },
+      "dragging": false
+    },
+    {
+      "id": "node-1036",
+      "type": "textNode",
+      "position": {
+        "x": 248.13347917618938,
+        "y": 419.47125969159924
+      },
+      "selected": false,
+      "data": {
+        "text": "Functional Requerements",
+        "fontSize": 20,
+        "w": 290,
+        "h": null,
+        "rotation": 0,
+        "color": "#e9ecef",
+        "opacity": 100,
+        "align": "left",
+        "fontFamily": "mono",
+        "isWidthFixed": false,
+        "incomingQps": 0,
+        "simMode": false
+      },
+      "style": {
+        "overflow": "visible",
+        "background": "transparent",
+        "border": "none"
+      },
+      "measured": {
+        "width": 290,
+        "height": 38
+      },
+      "dragging": false
+    },
+    {
+      "id": "node-1037",
+      "type": "textNode",
+      "position": {
+        "x": 262.78855661073504,
+        "y": 453.8905239368123
+      },
+      "selected": false,
+      "data": {
+        "text": "- create a short url from a long url\n    - optionally support custom alaias\n    - optionally suppert an expiration time\n- be redirected to the original url from the short url",
+        "fontSize": 14,
+        "w": 468,
+        "h": null,
+        "rotation": 0,
+        "color": "#e9ecef",
+        "opacity": 100,
+        "align": "left",
+        "fontFamily": "mono",
+        "isWidthFixed": false,
+        "incomingQps": 0,
+        "simMode": false
+      },
+      "style": {
+        "overflow": "visible",
+        "background": "transparent",
+        "border": "none"
+      },
+      "measured": {
+        "width": 468,
+        "height": 92
+      },
+      "dragging": false
+    },
+    {
+      "id": "node-1038",
+      "type": "textNode",
+      "position": {
+        "x": 258.75505244781726,
+        "y": 585.1138060301987
+      },
+      "selected": false,
+      "data": {
+        "text": "Non-functional Requirements\n",
+        "fontSize": 20,
+        "w": 338,
+        "h": null,
+        "rotation": 0,
+        "color": "#e9ecef",
+        "opacity": 100,
+        "align": "left",
+        "fontFamily": "mono",
+        "isWidthFixed": false,
+        "incomingQps": 0,
+        "simMode": false
+      },
+      "style": {
+        "overflow": "visible",
+        "background": "transparent",
+        "border": "none"
+      },
+      "measured": {
+        "width": 338,
+        "height": 38
+      },
+      "dragging": false
+    },
+    {
+      "id": "node-1039",
+      "type": "textNode",
+      "position": {
+        "x": 270.8555649365705,
+        "y": 624.9110553105054
+      },
+      "selected": false,
+      "data": {
+        "text": "- Low latency on redirects (~200)\n- Scale to support 1000M DAU and 1B urls\n- Ensure uniqueness of short code\n- High availability of short code",
+        "fontSize": 14,
+        "w": 350,
+        "h": null,
+        "rotation": 0,
+        "color": "#e9ecef",
+        "opacity": 100,
+        "align": "left",
+        "fontFamily": "mono",
+        "isWidthFixed": false,
+        "incomingQps": 0,
+        "simMode": false
+      },
+      "style": {
+        "overflow": "visible",
+        "background": "transparent",
+        "border": "none"
+      },
+      "measured": {
+        "width": 350,
+        "height": 92
+      },
+      "dragging": false
+    },
+    {
+      "id": "node-1040",
+      "type": "textNode",
+      "position": {
+        "x": 266.015351734884,
+        "y": 741.0759669963511
+      },
+      "selected": false,
+      "data": {
+        "text": "Core Entities",
+        "fontSize": 20,
+        "w": 170,
+        "h": null,
+        "rotation": 0,
+        "color": "#e9ecef",
+        "opacity": 100,
+        "align": "left",
+        "fontFamily": "mono",
+        "isWidthFixed": false,
+        "incomingQps": 0,
+        "simMode": false
+      },
+      "style": {
+        "overflow": "visible",
+        "background": "transparent",
+        "border": "none"
+      },
+      "measured": {
+        "width": 170,
+        "height": 38
+      },
+      "dragging": false
+    },
+    {
+      "id": "node-1041",
+      "type": "textNode",
+      "position": {
+        "x": 277.5780718747667,
+        "y": 778.1842135013794
+      },
+      "selected": false,
+      "data": {
+        "text": "- Original url\n- Short url\n- User",
+        "fontSize": 14,
+        "w": 132,
+        "h": null,
+        "rotation": 0,
+        "color": "#e9ecef",
+        "opacity": 100,
+        "align": "left",
+        "fontFamily": "mono",
+        "isWidthFixed": false,
+        "incomingQps": 0,
+        "simMode": false
+      },
+      "style": {
+        "overflow": "visible",
+        "background": "transparent",
+        "border": "none"
+      },
+      "measured": {
+        "width": 132,
+        "height": 71
+      },
+      "dragging": false
+    },
+    {
+      "id": "node-1042",
+      "type": "textNode",
+      "position": {
+        "x": 271.6622329444132,
+        "y": 882.7864460782685
+      },
+      "selected": false,
+      "data": {
+        "text": "API",
+        "fontSize": 20,
+        "w": 50,
+        "h": null,
+        "rotation": 0,
+        "color": "#e9ecef",
+        "opacity": 100,
+        "align": "left",
+        "fontFamily": "mono",
+        "isWidthFixed": false,
+        "incomingQps": 0,
+        "simMode": false
+      },
+      "style": {
+        "overflow": "visible",
+        "background": "transparent",
+        "border": "none"
+      },
+      "measured": {
+        "width": 50,
+        "height": 38
+      },
+      "dragging": false
+    },
+    {
+      "id": "node-1043",
+      "type": "textNode",
+      "position": {
+        "x": 281.45742429782047,
+        "y": 917.1820516020251
+      },
+      "selected": false,
+      "data": {
+        "text": "// shorten a url\nPOST /urls -> shortUrl\n{\n      originalUrl,\n      alias?,\n      expirationTime?\n}",
+        "fontSize": 14,
+        "w": 199,
+        "h": null,
+        "rotation": 0,
+        "color": "#e9ecef",
+        "opacity": 100,
+        "align": "left",
+        "fontFamily": "mono",
+        "isWidthFixed": false,
+        "incomingQps": 0,
+        "simMode": false
+      },
+      "style": {
+        "overflow": "visible",
+        "background": "transparent",
+        "border": "none"
+      },
+      "measured": {
+        "width": 199,
+        "height": 155
+      },
+      "dragging": false
+    },
+    {
+      "id": "node-1044",
+      "type": "textNode",
+      "position": {
+        "x": 277.83719527418765,
+        "y": 1093.7011878375101
+      },
+      "selected": false,
+      "data": {
+        "text": "// redirection\nGET {shortUrl} -> Redirect to Original",
+        "fontSize": 14,
+        "w": 333,
+        "h": null,
+        "rotation": 0,
+        "color": "#e9ecef",
+        "opacity": 100,
+        "align": "left",
+        "fontFamily": "mono",
+        "isWidthFixed": false,
+        "incomingQps": 0,
+        "simMode": false
+      },
+      "style": {
+        "overflow": "visible",
+        "background": "transparent",
+        "border": "none"
+      },
+      "measured": {
+        "width": 333,
+        "height": 50
+      },
+      "dragging": false
+    },
+    {
+      "id": "node-1045",
+      "type": "textNode",
+      "position": {
+        "x": 1655.2113821053945,
+        "y": 360.26629102378877
+      },
+      "selected": false,
+      "data": {
+        "text": "- read through\n- LRU cache\n\n  key: shortCode\n  value: longUrl",
+        "fontSize": 14,
+        "w": 148,
+        "h": null,
+        "rotation": 0,
+        "color": "#e9ecef",
+        "opacity": 100,
+        "align": "left",
+        "fontFamily": "mono",
+        "isWidthFixed": false,
+        "incomingQps": 0,
+        "simMode": false
+      },
+      "style": {
+        "overflow": "visible",
+        "background": "transparent",
+        "border": "none"
+      },
+      "measured": {
+        "width": 148,
+        "height": 113
+      },
+      "dragging": false
+    },
+    {
+      "id": "node-1046",
+      "type": "textNode",
+      "position": {
+        "x": 1743.8264776336512,
+        "y": 528.9177285543633
+      },
+      "selected": false,
+      "data": {
+        "text": "Url Table\n- shortUrl/ customAlias (pk)\n- longUrl\n- expirationTime\n- creationTime\n- userId",
+        "fontSize": 14,
+        "w": 249,
+        "h": null,
+        "rotation": 0,
+        "color": "#e9ecef",
+        "opacity": 100,
+        "align": "left",
+        "fontFamily": "mono",
+        "isWidthFixed": false,
+        "incomingQps": 0,
+        "simMode": false
+      },
+      "style": {
+        "overflow": "visible",
+        "background": "transparent",
+        "border": "none"
+      },
+      "measured": {
+        "width": 249,
+        "height": 134
+      },
+      "dragging": false
+    },
+    {
+      "id": "node-1047",
+      "type": "textNode",
+      "position": {
+        "x": 2042.5257789112445,
+        "y": 552.9209996105358
+      },
+      "selected": false,
+      "data": {
+        "text": "User\n- userId\n- ...",
+        "fontSize": 14,
+        "w": 81,
+        "h": null,
+        "rotation": 0,
+        "color": "#e9ecef",
+        "opacity": 100,
+        "align": "left",
+        "fontFamily": "mono",
+        "isWidthFixed": false,
+        "incomingQps": 0,
+        "simMode": false
+      },
+      "style": {
+        "overflow": "visible",
+        "background": "transparent",
+        "border": "none"
+      },
+      "measured": {
+        "width": 81,
+        "height": 71
+      },
+      "dragging": false
+    },
+    {
+      "id": "node-1048",
+      "type": "textNode",
+      "position": {
+        "x": 1742.8447271624227,
+        "y": 700.2573793324838
+      },
+      "selected": false,
+      "data": {
+        "text": "8 + 100 +8 + 100 + 8 = ~500bytes * 1B = 500GB",
+        "fontSize": 14,
+        "w": 392,
+        "h": null,
+        "rotation": 0,
+        "color": "#e9ecef",
+        "opacity": 100,
+        "align": "left",
+        "fontFamily": "mono",
+        "isWidthFixed": false,
+        "incomingQps": 0,
+        "simMode": false
+      },
+      "style": {
+        "overflow": "visible",
+        "background": "transparent",
+        "border": "none"
+      },
+      "measured": {
+        "width": 392,
+        "height": 29
+      },
+      "dragging": false
+    },
+    {
+      "id": "node-1049",
+      "type": "textNode",
+      "position": {
+        "x": 1687.9521162570607,
+        "y": 781.0580930623435
+      },
+      "selected": false,
+      "data": {
+        "text": "- fast\n- unique\n- short (5 - 7)",
+        "fontSize": 14,
+        "w": 140,
+        "h": null,
+        "rotation": 0,
+        "color": "#e9ecef",
+        "opacity": 100,
+        "align": "left",
+        "fontFamily": "mono",
+        "isWidthFixed": false,
+        "incomingQps": 0,
+        "simMode": false
+      },
+      "style": {
+        "overflow": "visible",
+        "background": "transparent",
+        "border": "none"
+      },
+      "measured": {
+        "width": 140,
+        "height": 71
+      },
+      "dragging": false
+    },
+    {
+      "id": "node-1050",
+      "type": "textNode",
+      "position": {
+        "x": 1707.188027157259,
+        "y": 899.5576124373257
+      },
+      "selected": false,
+      "data": {
+        "text": "1. prefix of the long url\n2. random number generator 10^9 10 characters\n    - base62 encoding, 0-9, A-Z, a-z\n    - 62^6 = 56B\n    - Birthday Paradox\n    - 880k collisions\n    - we just need to check for collision first\n3. Hash the long url\n    - md5(longUrl) -> hash -> base62(hash)[:6]\n    - same as above\n4. Counter\n    - increment a counter -> base62\n    - predictability which is bad for security\n        - \"warning, don't shorten private urls\"\n        - rate limiting\n    - bijective function\n        - squids.org",
+        "fontSize": 14,
+        "w": 409,
+        "h": null,
+        "rotation": 0,
+        "color": "#e9ecef",
+        "opacity": 100,
+        "align": "left",
+        "fontFamily": "mono",
+        "isWidthFixed": false,
+        "incomingQps": 0,
+        "simMode": false
+      },
+      "style": {
+        "overflow": "visible",
+        "background": "transparent",
+        "border": "none"
+      },
+      "measured": {
+        "width": 409,
+        "height": 365
+      },
+      "dragging": false
+    },
+    {
+      "id": "node-1051",
+      "type": "textNode",
+      "position": {
+        "x": 1556.473654862303,
+        "y": 946.6757054909431
+      },
+      "selected": false,
+      "data": {
+        "text": "INCR",
+        "fontSize": 14,
+        "w": 48,
+        "h": null,
+        "rotation": 0,
+        "color": "#e9ecef",
+        "opacity": 100,
+        "align": "left",
+        "fontFamily": "mono",
+        "isWidthFixed": false,
+        "incomingQps": 0,
+        "simMode": false
+      },
+      "style": {
+        "overflow": "visible",
+        "background": "transparent",
+        "border": "none"
+      },
+      "measured": {
+        "width": 48,
+        "height": 29
+      },
+      "dragging": false
+    }
+  ],
+  "edges": [
+    {
+      "type": "simEdge",
+      "markerEnd": {
+        "type": "arrow",
+        "width": 16,
+        "height": 12,
+        "color": "#334155"
+      },
+      "source": "node-1002",
+      "sourceHandle": "right",
+      "target": "node-1003",
+      "targetHandle": "left",
+      "data": {
+        "pct": 100
+      },
+      "id": "xy-edge__node-1002right-node-1003left",
+      "selected": false
+    },
+    {
+      "type": "simEdge",
+      "markerEnd": {
+        "type": "arrow",
+        "width": 16,
+        "height": 12,
+        "color": "#334155"
+      },
+      "source": "node-1003",
+      "sourceHandle": "right",
+      "target": "node-1004",
+      "targetHandle": "left",
+      "data": {
+        "pct": 80
+      },
+      "id": "xy-edge__node-1003right-node-1004left",
+      "selected": false
+    },
+    {
+      "type": "simEdge",
+      "markerEnd": {
+        "type": "arrow",
+        "width": 16,
+        "height": 12,
+        "color": "#334155"
+      },
+      "source": "node-1003",
+      "sourceHandle": "right",
+      "target": "node-1005",
+      "targetHandle": "left",
+      "data": {
+        "pct": 20
+      },
+      "id": "xy-edge__node-1003right-node-1005left",
+      "selected": false
+    },
+    {
+      "type": "simEdge",
+      "markerEnd": {
+        "type": "arrow",
+        "width": 16,
+        "height": 12,
+        "color": "#334155"
+      },
+      "source": "node-1004",
+      "sourceHandle": "right",
+      "target": "node-1006",
+      "targetHandle": "left",
+      "data": {
+        "pct": 80
+      },
+      "id": "xy-edge__node-1004right-node-1006left",
+      "selected": false
+    },
+    {
+      "type": "simEdge",
+      "markerEnd": {
+        "type": "arrow",
+        "width": 16,
+        "height": 12,
+        "color": "#334155"
+      },
+      "source": "node-1004",
+      "sourceHandle": "right",
+      "target": "node-1007",
+      "targetHandle": "left",
+      "data": {
+        "pct": 20
+      },
+      "id": "xy-edge__node-1004right-node-1007left",
+      "selected": false
+    },
+    {
+      "type": "simEdge",
+      "markerEnd": {
+        "type": "arrow",
+        "width": 16,
+        "height": 12,
+        "color": "#334155"
+      },
+      "source": "node-1005",
+      "sourceHandle": "right",
+      "target": "node-1007",
+      "targetHandle": "left",
+      "data": {
+        "pct": 100
+      },
+      "id": "xy-edge__node-1005right-node-1007left",
+      "selected": false
+    },
+    {
+      "type": "simEdge",
+      "markerEnd": {
+        "type": "arrow",
+        "width": 16,
+        "height": 12,
+        "color": "#334155"
+      },
+      "source": "node-1005",
+      "sourceHandle": "right",
+      "target": "node-1008",
+      "targetHandle": "left",
+      "data": {
+        "pct": 100
+      },
+      "id": "xy-edge__node-1005right-node-1008left",
+      "selected": false
+    }
+  ],
+  "viewport": {
+    "x": 45.10649258649323,
+    "y": -112.76555201882877,
+    "zoom": 0.6142587292022862
+  },
+  "version": "1.0"
+}
